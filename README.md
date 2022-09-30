@@ -2,7 +2,7 @@
 
 This project is me trying out the new `dialog` element.
 
-Demo cna be found [here](https://davinaleong.github.io/proj-dialog-example/).
+Demo can be found [here](https://davinaleong.github.io/proj-dialog-example/).
 
 ## Getting Started
 
