@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
 
-    <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="/scripts/main.js"></script>
   </head>
   <body class="clr-grey-900 bg-grey-50">
     <main class="flow">
@@ -49,6 +49,20 @@
       </p>
 
       <p>
+        <button class="btn btn-secondary" type="button" data-element="open-modal">
+          Launch Modal
+        </button>
+      </p>
+
+      <p>How about a form modal? Here's an example:</p>
+
+      <p>
+        <button class="btn btn-secondary" type="button" data-element="open-form-modal">
+          Launch Form Modal
+        </button>
+      </p>
+
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi
         excepturi officiis voluptas temporibus earum ea repellendus pariatur rem
         sequi est sint obcaecati et iste nihil assumenda similique quisquam quae
@@ -62,26 +76,51 @@
         suscipit ex laboriosam ad nobis deleniti expedita veniam aspernatur nemo
         quod labore ab quo.
       </p>
-
-      <p>
-        <button class="btn btn-secondary" type="button">
-          Launch Modal
-        </button>
-      </p>
     </main>
 
-    <div class="modal">
+    <dialog class="modal" data-element="modal-dialog">
       <div class="modal-body | clr-secondary-900 py-200">
         <h2 class="fs-600 mb-200">This is a Modal</h2>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eius accusantium est fugit, velit nisi dicta qui deleniti illum adipisci temporibus deserunt modi! Dolores debitis quidem id reiciendis quas ipsa voluptatibus ullam atque, incidunt obcaecati maiores voluptates officiis libero dolorem molestiae sunt a minima delectus itaque aut dolor. Tenetur, facilis.</p>
       </div>
       <div class="modal-footer | py-200">
-        <button class="btn btn-secondary" type="button">
+        <button class="btn btn-secondary" type="button" data-element="close-modal">
           Close Modal
         </button>
       </div>
-    </div>
+    </dialog>
+
+    <dialog open class="modal" data-element="modal-form-dialog">
+      <div class="modal-body | clr-secondary-900 py-200">
+        <h2 class="fs-600 mb-200">Modify Your Prefernces</h2>
+
+        <form action="" method="dialog" class="dialog-form">
+          <div class="form-group">
+            <label class="form-label" for="size">Text Size</label>
+            <select name="size" id="size" class="form-input">
+              <option value="">Regular</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox">
+              <label class="checkbox-label" for="dark">
+                <input type="checkbox" name="dark" id="dark">
+                Dark Mode
+              </label>
+            </div>
+          </div>
+
+          <div class="form-buttons | pt-400">
+            <button class="btn btn-secondary" type="submit">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
     
   </body>
 </html>
