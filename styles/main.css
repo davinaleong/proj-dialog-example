@@ -103,17 +103,7 @@ body {
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
   min-height: 100vh;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    var(--clr-accent-400),
-    var(--clr-primary-400)
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: var(--size-400);
 }
 
 /* * {
