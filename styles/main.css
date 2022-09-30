@@ -181,7 +181,7 @@ a:where(:hover, :focus, :focus-visible) {
   --btn-hover-bg-clr: var(--clr-grey-800);
   --btn-hover-border-clr: var(--clr-grey-800);
 
-  --btn-padding: var(--size-300) var(--size-600);
+  --btn-padding: var(--size-200) var(--size-400);
 
   display: inline-flex;
   align-items: center;
@@ -192,7 +192,6 @@ a:where(:hover, :focus, :focus-visible) {
   border: thin solid var(--btn-border-clr);
   padding: var(--btn-padding);
   transition: all 0.3s ease-in-out;
-  border-radius: var(--size-200);
 }
 
 .btn:where(:hover, :focus, :focus-visible) {
@@ -206,16 +205,31 @@ a:where(:hover, :focus, :focus-visible) {
 }
 
 .btn-secondary {
-  --btn-bg-clr: var(--clr-secondary-400);
-  --btn-border-clr: var(--clr-secondary-400);
-  --btn-hover-bg-clr: var(--clr-secondary-900);
-  --btn-hover-border-clr: var(--clr-secondary-900);
+  --btn-clr: var(--clr-grey-50);
+  --btn-bg-clr: var(--clr-secondary-900);
+  --btn-border-clr: var(--clr-secondary-900);
+
+  --btn-hover-clr: var(--clr-grey-50);
+  --btn-hover-bg-clr: var(--clr-secondary-800);
+  --btn-hover-border-clr: var(--clr-secondary-800);
 }
 
 /** Content - General Styling - End **/
 
 /** Content - Layout **/
+.modal {
+  max-width: 600px;
+  margin-inline: auto;
+  background-color: var(--clr-primary-50);
+  border: 2px solid var(--clr-secondary-900);
+  padding: var(--size-400);
+}
 
+.modal-footer {
+  display: flex;
+  justify-content: end;
+  gap: var(--size-200);
+}
 /** Content - Layout - End **/
 
 /** Utility **/
