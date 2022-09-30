@@ -171,6 +171,7 @@ a {
   --clr-link: var(--clr-secondary-900);
   --clr-hover-link: var(--clr-secondary-700);
 
+  font-weight: var(--fw-bold);
   color: var(--clr-link);
 }
 
