@@ -168,11 +168,10 @@ b {
 }
 
 a {
-  --clr-link: var(--clr-grey-400);
-  --clr-hover-link: var(--clr-grey-400);
+  --clr-link: var(--clr-secondary-900);
+  --clr-hover-link: var(--clr-secondary-700);
 
   color: var(--clr-link);
-  text-decoration: none;
 }
 
 a:where(:hover, :focus, :focus-visible) {
@@ -225,7 +224,7 @@ a:where(:hover, :focus, :focus-visible) {
 
 /** Content - Layout **/
 .modal {
-  max-width: 600px;
+  max-width: 50ch;
   margin: auto;
   background-color: var(--clr-primary-50);
   border: 2px solid var(--clr-secondary-900);
