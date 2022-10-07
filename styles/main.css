@@ -199,12 +199,28 @@ a:where(:hover, :focus, :focus-visible) {
   border: thin solid var(--btn-border-clr);
   padding: var(--btn-padding);
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .btn:where(:hover, :focus, :focus-visible) {
   color: var(--btn-hover-clr);
   background-color: var(--btn-hover-bg-clr);
   border: thin solid var(--btn-hover-border-clr);
+}
+
+.btn-icon {
+  --btn-padding: 0;
+  --btn-icon-size: var(--size-800);
+
+  width: var(--btn-icon-size);
+  height: var(--btn-icon-size);
+  font-size: var(--fs-700);
+  border-radius: 50%;
+  box-shadow: 0.1em 0.1em 0.1em 0 rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  top: var(--size-400);
+  right: var(--size-400);
 }
 
 .btn-full {
